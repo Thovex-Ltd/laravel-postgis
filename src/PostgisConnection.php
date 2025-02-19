@@ -2,10 +2,10 @@
 
 namespace MStaack\LaravelPostgis;
 
-use Bosnadev\Database\PostgresConnection;
+use Illuminate\Database\PostgresConnection as BasePostgresConnection;
 use MStaack\LaravelPostgis\Schema\Grammars\PostgisGrammar;
 
-class PostgisConnection extends PostgresConnection
+class PostgisConnection extends BasePostgresConnection
 {
     /**
      * Get the default schema grammar instance.
@@ -17,7 +17,11 @@ class PostgisConnection extends PostgresConnection
         return $this->withTablePrefix(new PostgisGrammar());
     }
 
-
+    /**
+     * Get a schema builder instance for the connection.
+     *
+     * @return Schema\Builder
+     */
     public function getSchemaBuilder()
     {
         if ($this->schemaGrammar === null) {
@@ -25,5 +29,15 @@ class PostgisConnection extends PostgresConnection
         }
 
         return new Schema\Builder($this);
+    }
+
+    /**
+     * Get the default post processor instance.
+     *
+     * @return \Illuminate\Database\Query\Processors\PostgresProcessor
+     */
+    protected function getDefaultPostProcessor()
+    {
+        return new \Illuminate\Database\Query\Processors\PostgresProcessor;
     }
 }
