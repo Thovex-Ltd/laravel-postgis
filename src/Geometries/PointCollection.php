@@ -11,7 +11,7 @@ use IteratorAggregate;
 use JsonSerializable;
 use Traversable;
 
-abstract class PointCollection implements IteratorAggregate, Arrayable, ArrayAccess, Countable, JsonSerializable
+abstract class PointCollection extends Geometry implements IteratorAggregate, Arrayable, ArrayAccess, Countable, JsonSerializable
 {
     /**
      * @var Point[]
