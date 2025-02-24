@@ -1,12 +1,12 @@
 <?php
 
-namespace MStaack\LaravelPostgis\Tests\Geometries;
+namespace ThovexLtd\LaravelPostgis\Tests\Geometries;
 
-use MStaack\LaravelPostgis\Geometries\LineString;
-use MStaack\LaravelPostgis\Geometries\MultiPolygon;
-use MStaack\LaravelPostgis\Geometries\Point;
-use MStaack\LaravelPostgis\Geometries\Polygon;
-use MStaack\LaravelPostgis\Tests\BaseTestCase;
+use ThovexLtd\LaravelPostgis\Geometries\LineString;
+use ThovexLtd\LaravelPostgis\Geometries\MultiPolygon;
+use ThovexLtd\LaravelPostgis\Geometries\Point;
+use ThovexLtd\LaravelPostgis\Geometries\Polygon;
+use ThovexLtd\LaravelPostgis\Tests\BaseTestCase;
 
 class MultiPolygonTest extends BaseTestCase
 {

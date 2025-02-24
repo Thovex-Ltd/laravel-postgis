@@ -1,8 +1,8 @@
-<?php namespace MStaack\LaravelPostgis\Connectors;
+<?php namespace ThovexLtd\LaravelPostgis\Connectors;
 
 use Illuminate\Database\Connection;
 use PDO;
-use MStaack\LaravelPostgis\PostgisConnection;
+use ThovexLtd\LaravelPostgis\PostgisConnection;
 use Illuminate\Database\Connectors\ConnectionFactory as BaseConnectionFactory;
 
 class ConnectionFactory extends BaseConnectionFactory
