@@ -1,4 +1,4 @@
-<?php namespace MStaack\LaravelPostgis\Schema;
+<?php namespace ThovexLtd\LaravelPostgis\Schema;
 
 use Illuminate\Database\Schema\Blueprint as BaseBlueprint;
 

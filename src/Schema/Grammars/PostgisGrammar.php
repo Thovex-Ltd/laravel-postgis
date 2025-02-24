@@ -1,8 +1,8 @@
-<?php namespace MStaack\LaravelPostgis\Schema\Grammars;
+<?php namespace ThovexLtd\LaravelPostgis\Schema\Grammars;
 
 use Illuminate\Support\Fluent;
-use MStaack\LaravelPostgis\Schema\Blueprint;
-use MStaack\LaravelPostgis\Exceptions\UnsupportedGeomtypeException;
+use ThovexLtd\LaravelPostgis\Schema\Blueprint;
+use ThovexLtd\LaravelPostgis\Exceptions\UnsupportedGeomtypeException;
 use Illuminate\Database\Schema\Grammars\PostgresGrammar;
 
 class PostgisGrammar extends PostgresGrammar

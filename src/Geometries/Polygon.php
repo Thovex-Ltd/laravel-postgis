@@ -1,6 +1,6 @@
 <?php
 
-namespace MStaack\LaravelPostgis\Geometries;
+namespace ThovexLtd\LaravelPostgis\Geometries;
 
 use GeoJson\Geometry\LinearRing;
 

@@ -98,7 +98,7 @@ Open the created migrations with your editor.
 
 ```PHP
 use Illuminate\Database\Migrations\Migration;
-use MStaack\LaravelPostgis\Schema\Blueprint;
+use ThovexLtd\LaravelPostgis\Schema\Blueprint;
 
 class CreateLocationsTable extends Migration {
 
@@ -160,8 +160,8 @@ what attributes/columns on your model are to be considered geometry objects. By 
 
 ```PHP
 use Illuminate\Database\Eloquent\Model;
-use MStaack\LaravelPostgis\Eloquent\PostgisTrait;
-use MStaack\LaravelPostgis\Geometries\Point;
+use ThovexLtd\LaravelPostgis\Eloquent\PostgisTrait;
+use ThovexLtd\LaravelPostgis\Geometries\Point;
 
 class Location extends Model
 {

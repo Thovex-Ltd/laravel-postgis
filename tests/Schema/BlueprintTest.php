@@ -1,10 +1,10 @@
 <?php
 
-namespace MStaack\LaravelPostgis\Tests\Schema;
+namespace ThovexLtd\LaravelPostgis\Tests\Schema;
 
 use Mockery;
-use MStaack\LaravelPostgis\Schema\Blueprint;
-use MStaack\LaravelPostgis\Tests\BaseTestCase;
+use ThovexLtd\LaravelPostgis\Schema\Blueprint;
+use ThovexLtd\LaravelPostgis\Tests\BaseTestCase;
 
 class BlueprintTest extends BaseTestCase
 {
