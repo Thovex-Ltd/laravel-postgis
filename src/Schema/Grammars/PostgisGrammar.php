@@ -3,7 +3,7 @@
 use Illuminate\Support\Fluent;
 use MStaack\LaravelPostgis\Schema\Blueprint;
 use MStaack\LaravelPostgis\Exceptions\UnsupportedGeomtypeException;
-use Bosnadev\Database\Schema\Grammars\PostgresGrammar;
+use Illuminate\Database\Schema\Grammars\PostgresGrammar;
 
 class PostgisGrammar extends PostgresGrammar
 {
@@ -194,22 +194,18 @@ class PostgisGrammar extends PostgresGrammar
      */
     protected function compileGeometry(Blueprint $blueprint, Fluent $command)
     {
-
         $dimensions = $command->dimensions ?: 2;
         $typmod = $command->typmod ? 'true' : 'false';
         $srid = $command->srid ?: 4326;
-        $schema = function_exists('config') ? config('postgis.schema') : 'public';
 
         return sprintf(
-                "SELECT %s.AddGeometryColumn('%s', '%s', %d, '%s.%s', %d, %s)",
-                $schema,
-                $blueprint->getTable(),
-                $command->column,
-                $srid,
-                $schema,
-                strtoupper($command->type),
-                $dimensions,
-                $typmod
+            "SELECT AddGeometryColumn('%s', '%s', %d, '%s', %d, %s)",
+            $blueprint->getTable(),
+            $command->column,
+            $srid,
+            strtoupper($command->type), // No schema prefix
+            $dimensions,
+            $typmod
         );
     }
 
