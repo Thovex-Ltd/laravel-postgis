@@ -1,6 +1,6 @@
 {
     "name": "thovex-ltd/laravel-postgis",
-    "description": "Postgis extensions for laravel. Aims to make it easy to work with geometries from laravel models",
+    "description": "PostGIS extensions for Laravel. Aims to make it easy to work with geometries from Laravel models",
     "require": {
         "php": ">=7.1",
         "illuminate/database": "^9.0|^10.0|^11.0",
@@ -15,33 +15,24 @@
     },
     "autoload": {
         "psr-4": {
-            "MStaack\\LaravelPostgis\\": "src/"
+            "ThovexLtd\\LaravelPostgis\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MStaack\\LaravelPostgis\\Tests\\": "tests/"
+            "ThovexLtd\\LaravelPostgis\\Tests\\": "tests/"
         }
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Peter Haza",
-            "email": "peter.haza@gmail.com"
-        },
-        {
-            "name": "Nicholas Barrett",
-            "email": "njbarrett7@gmail.com"
-        },
-        {
-            "name": "Max Matteo Staack",
-            "email": "maxmatteostaack@gmail.com"
+            "name": "Thovex Ltd."
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-                "MStaack\\LaravelPostgis\\DatabaseServiceProvider"
+                "ThovexLtd\\LaravelPostgis\\DatabaseServiceProvider"
             ]
         }
     },
