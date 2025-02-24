@@ -1,10 +1,10 @@
 <?php
 
-namespace MStaack\LaravelPostgis\Tests;
+namespace ThovexLtd\LaravelPostgis\Tests;
 
-use MStaack\LaravelPostgis\PostgisConnection;
-use MStaack\LaravelPostgis\Schema\Builder;
-use MStaack\LaravelPostgis\Tests\Stubs\PDOStub;
+use ThovexLtd\LaravelPostgis\PostgisConnection;
+use ThovexLtd\LaravelPostgis\Schema\Builder;
+use ThovexLtd\LaravelPostgis\Tests\Stubs\PDOStub;
 
 class PostgisConnectionTest extends BaseTestCase
 {

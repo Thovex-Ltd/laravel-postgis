@@ -1,4 +1,4 @@
-<?php namespace MStaack\LaravelPostgis\Schema;
+<?php namespace ThovexLtd\LaravelPostgis\Schema;
 
 use Closure;
 use Illuminate\Database\Schema\PostgresBuilder;
