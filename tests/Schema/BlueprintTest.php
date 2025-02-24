@@ -25,6 +25,7 @@ class BlueprintTest extends BaseTestCase
             ->with('multipoint', ['col', null, 2, true]);
 
         $this->blueprint->multipoint('col');
+        $this->assertTrue(true);
     }
 
     public function testPolygon()
@@ -34,6 +35,7 @@ class BlueprintTest extends BaseTestCase
             ->with('polygon', ['col', null, 2, true]);
 
         $this->blueprint->polygon('col');
+        $this->assertTrue(true);
     }
 
     public function testMulltiPolygon()
@@ -43,6 +45,7 @@ class BlueprintTest extends BaseTestCase
             ->with('multipolygon', ['col', null, 2, true]);
 
         $this->blueprint->multipolygon('col');
+        $this->assertTrue(true);
     }
 
     public function testLineString()
@@ -52,6 +55,7 @@ class BlueprintTest extends BaseTestCase
             ->with('linestring', ['col', null, 2, true]);
 
         $this->blueprint->linestring('col');
+        $this->assertTrue(true);
     }
 
     public function testMultiLineString()
@@ -61,6 +65,7 @@ class BlueprintTest extends BaseTestCase
             ->with('multilinestring', ['col', null, 2, true]);
 
         $this->blueprint->multilinestring('col');
+        $this->assertTrue(true);
     }
 
     public function testGeography()
@@ -70,6 +75,7 @@ class BlueprintTest extends BaseTestCase
             ->with('geography', ['col', null, 2, true]);
 
         $this->blueprint->geography('col');
+        $this->assertTrue(true);
     }
 
     public function testGeometryCollection()
@@ -79,6 +85,7 @@ class BlueprintTest extends BaseTestCase
             ->with('geometrycollection', ['col', null, 2, true]);
 
         $this->blueprint->geometrycollection('col');
+        $this->assertTrue(true);
     }
 
     public function testEnablePostgis()
@@ -88,6 +95,7 @@ class BlueprintTest extends BaseTestCase
             ->with('enablePostgis', []);
 
         $this->blueprint->enablePostgis();
+        $this->assertTrue(true);
     }
 
     public function testEnablePostgisIfNotExists()
@@ -97,6 +105,7 @@ class BlueprintTest extends BaseTestCase
             ->with('enablePostgis', []);
 
         $this->blueprint->enablePostgisIfNotExists();
+        $this->assertTrue(true);
     }
 
     public function testDisablePostgis()
@@ -106,6 +115,7 @@ class BlueprintTest extends BaseTestCase
             ->with('disablePostgis', []);
 
         $this->blueprint->disablePostgis();
+        $this->assertTrue(true);
     }
 
     public function testDisablePostgisIfExists()
@@ -115,5 +125,6 @@ class BlueprintTest extends BaseTestCase
             ->with('disablePostgis', []);
 
         $this->blueprint->disablePostgisIfExists();
+        $this->assertTrue(true);
     }
 }
