@@ -3,14 +3,14 @@
     "description": "PostGIS extensions for Laravel. Aims to make it easy to work with geometries from Laravel models",
     "require": {
         "php": ">=7.1",
-        "illuminate/database": "^9.0|^10.0|^11.0",
+        "illuminate/database": "^9.0|^10.0|^11.0|^12.0|^13.0",
         "geo-io/wkb-parser": "^1.0",
         "jmikola/geojson": "^1.0",
         "ext-pdo": "*",
         "ext-json": "*"
     },
     "require-dev": {
-        "illuminate/pagination": "^9.0|^10.0|^11.0",
+        "illuminate/pagination": "^9.0|^10.0|^11.0|^12.0|^13.0",
         "phpunit/phpunit": ">=8.5.23",
         "mockery/mockery": "^1.3"
     },
